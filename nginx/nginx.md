@@ -28,6 +28,46 @@ sudo systemctl status nginx
 
 ---
 
+## 🪟 Installation on Windows
+
+### Option 1: Using WSL (Recommended)
+
+1. Enable Windows Subsystem for Linux
+2. Install Ubuntu from Microsoft Store
+3. Launch Ubuntu and run:
+
+```bash
+sudo apt update
+sudo apt install nginx
+```
+
+4. Start Nginx with:
+
+```bash
+sudo service nginx start
+```
+
+5. Open browser and go to `http://localhost:80`
+
+### Option 2: Native Windows (Less Common)
+
+1. Download precompiled binaries from [https://nginx.org/en/download.html](https://nginx.org/en/download.html)
+2. Extract the ZIP file
+3. Open `cmd` and navigate to the folder
+4. Start Nginx:
+
+```cmd
+start nginx
+```
+
+5. Stop Nginx:
+
+```cmd
+nginx -s stop
+```
+
+---
+
 ## 📁 Default File Paths
 
 * Config: `/etc/nginx/nginx.conf`
